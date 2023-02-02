@@ -50,11 +50,11 @@ function App() {
         ))}
 
         <h2>Filtered Jokes: </h2>
-        {
-			jokes.filter((joke)=> joke.id===filteredJokes).map((joke)=> 
-			<ChuckJoke {...joke} />)
-			 
-		}
+        {jokes
+          .filter((joke) => joke.id === filteredJokes)
+          .map((joke) => (
+            <ChuckJoke {...joke} />
+          ))}
       </div>
     </>
   );
